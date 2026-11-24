@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عبدالله للبرمجيات</title>
+<meta name="description" content="عبدالله للبرمجيات - تصميم وتطوير المواقع والتطبيقات والحلول الرقمية.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #080d19;
+  color: white;
+  line-height: 1.8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+header {
+  background: #0c1425;
+  padding: 20px 0;
+  border-bottom: 1px solid #20324d;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  color: #36c8ff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #36c8ff;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #12365a, #080d19 70%);
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 58px);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #36c8ff;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  color: #bdc9da;
+  font-size: 19px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 28px;
+  background: #159bd1;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: bold;
+  margin: 5px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #0877a8;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #36c8ff;
+  color: #36c8ff;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  text-align: center;
+  color: #aab8ca;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.service-card {
+  background: #101b2e;
+  border: 1px solid #20324d;
+  padding: 30px 22px;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: #36c8ff;
+}
+
+.service-icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  color: #36c8ff;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #b7c4d5;
+  font-size: 15px;
+}
+
+.about {
+  background: #0d1627;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-content p {
+  color: #b7c4d5;
+  font-size: 18px;
+}
+
+.contact-box {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  background: #101b2e;
+  border: 1px solid #20324d;
+  padding: 35px;
+  border-radius: 16px;
+}
+
+.contact-box p {
+  color: #b7c4d5;
+  margin: 12px 0 22px;
+}
+
+footer {
+  background: #050914;
+  text-align: center;
+  padding: 25px;
+  color: #8b9bb0;
+  border-top: 1px solid #1c2a42;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">عبدالله للبرمجيات</div>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <h1>نحوّل أفكارك إلى <span>واقع رقمي</span></h1>
+    <p>
+      نقدم حلولاً رقمية متكاملة تساعدك على تطوير أعمالك
+      وبناء حضور احترافي في العالم الرقمي.
+    </p>
+    <a href="#services" class="btn">اكتشف خدماتنا</a>
+    <a href="#contact" class="btn btn-outline">اطلب خدمتك الآن</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">خدماتنا</h2>
+    <p class="section-desc">حلول تقنية وإبداعية تناسب احتياجات مشروعك</p>
+
+    <div class="services">
+
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>تصميم المواقع الإلكترونية</h3>
+        <p>تصميم مواقع احترافية وسريعة ومتوافقة مع الجوال والكمبيوتر.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>تطبيقات الويب</h3>
+        <p>إنشاء تطبيقات ويب عملية تساعدك على إدارة أعمالك وتطوير خدماتك.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📢</div>
+        <h3>التسويق الإلكتروني</h3>
+        <p>حلول تسويقية تساعد على تعزيز حضور علامتك التجارية رقمياً.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>تصميم الهويات التجارية</h3>
+        <p>تصميم هويات بصرية وشعارات تعكس شخصية مشروعك وتميزه.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <h3>تطوير المواقع القديمة</h3>
+        <p>تحديث المواقع الحالية وتحسين تصميمها وتجربة استخدامها.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>تحسين تجربة المستخدم</h3>
+        <p>تطوير واجهات سهلة الاستخدام وتنظيم المحتوى بشكل احترافي.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="section-title">من نحن</h2>
+      <p>
+        عبدالله للبرمجيات علامة شخصية تقدم خدمات تقنية ورقمية
+        تهدف إلى مساعدة الأفراد وأصحاب المشاريع على بناء حضور رقمي
+        مميز من خلال التصميم والتطوير والحلول الإبداعية.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">لنعمل معاً</h2>
+    <p class="section-desc">هل لديك فكرة أو مشروع؟ يسعدنا التواصل معك.</p>
+
+    <div class="contact-box">
+      <h3>ابدأ مشروعك الآن</h3>
+      <p>تواصل معنا لمناقشة فكرتك واختيار الخدمة المناسبة لك.</p>
+      <a href="mailto:YOUR_EMAIL@example.com" class="btn">
+        راسلنا عبر البريد الإلكتروني
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 عبدالله للبرمجيات - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
